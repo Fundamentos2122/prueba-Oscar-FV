@@ -10,3 +10,38 @@ p {
     border: 1px solid black;
     color: black;
 }
+
+/* Elemento que contenga el atributo  */
+[attr1]{
+    font-family: cursive;
+}
+
+/* El valor del atributo debe ser completamente igual */
+[attr1="primer parrafo"]{
+    font-size: 30px;
+}
+
+/* El valor comienza con la cadena dada */
+[attr1|="parrafo"]{
+    font-weight: bold;
+}
+
+/*El valor comienza con los caracteres dados*/
+[attr1 ^= "pa"]{
+    color: brown;
+}
+
+/*El valor termine con los caracteres dados */
+[attr1 $= "s"]{
+    margin-left: 1px solid black;
+}
+
+/* El valor contiene la cadena dada */
+[attr1 ~= "parrafo"]{
+    border: 1px solid black;
+}
+
+/*El valor contiene la cadena dada */
+[attr1 *= "u"]{
+    text-transform: uppercase;
+}
